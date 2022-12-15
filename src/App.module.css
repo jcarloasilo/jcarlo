@@ -1,0 +1,175 @@
+.container {
+  max-width: var(--layout-width);
+  margin: 0 auto;
+  display: flex;
+  gap: 0.5em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#my-name {
+  background-color: var(--soft-orange);
+  color: var(--solid-white);
+}
+
+#my-name .container {
+  padding: 20em 0;
+}
+
+#my-name h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  text-shadow: 0.125em 0.125em 0 hsl(0deg 0% 0% / 10%);
+}
+
+@media (min-width: 37.5rem) {
+  #my-name h1 {
+    font-size: 4rem;
+  }
+}
+
+#works {
+  background-color: var(--dark-blue);
+  color: #faedcd;
+}
+
+#works .container {
+  padding: 7em 0;
+}
+
+.work-img {
+  width: min(30rem, 60%);
+  margin-bottom: 1.5em;
+}
+
+#works h2 {
+  font-size: 3rem;
+}
+
+#about {
+}
+
+#about .container {
+  padding: 5em 0;
+}
+
+.human-img {
+  width: min(23rem, 60%);
+  margin-bottom: 1.5em;
+}
+
+#about h2 {
+  font-size: 3rem;
+  margin-bottom: 1em;
+}
+
+#about h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--medium-blue);
+}
+
+#about p,
+li {
+  font-size: 1.3rem;
+  color: var(--gray-500);
+}
+
+.description {
+  display: grid;
+  width: 100%;
+  padding: 1.5em 3.5em;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4em;
+}
+
+.intro {
+  grid-column: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.skills ul {
+  list-style-position: inside;
+  list-style-type: circle;
+}
+
+#contact {
+  background-color: var(--dark-blue);
+  color: #faedcd;
+}
+
+#contact .container {
+  padding: 5em 0;
+}
+
+.contact-img {
+  width: min(23rem, 60%);
+  margin-bottom: 2.5em;
+}
+
+#contact h2 {
+  font-size: 3rem;
+}
+
+#contact p {
+  font-size: 1.25rem;
+  color: var(--gray-300);
+  margin-bottom: 3em;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: min(33rem, 80%);
+}
+
+input[type="text"],
+textarea {
+  border-radius: 10px;
+  padding: 1.5em;
+  border: 0;
+  outline: none;
+  background-color: var(--gray-200);
+}
+
+.long-input {
+  height: 12em;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border: 3px dotted var(--light-blue);
+}
+
+.contact-form button {
+  cursor: pointer;
+  background-color: var(--medium-blue);
+  color: var(--solid-white);
+  font-weight: 700;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  padding: 1.25em;
+  border: 0;
+  transition: 0.5s;
+}
+
+.contact-form button:hover {
+  border-radius: 10px;
+  font-size: 1.25rem;
+  padding: 1.25em;
+  border: 0;
+  background-color: var(--soft-orange);
+  /* color: var(--dark-blue); */
+}

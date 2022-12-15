@@ -1,0 +1,5 @@
+.main-footer {
+  padding: 3em;
+  background-color: var(--gray-300);
+  border-top: solid 2px var(--gray-200);
+}

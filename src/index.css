@@ -2,6 +2,7 @@
 
 :root {
   /*Neutral color*/
+  --layout-width: 67.5rem;
   --solid-white: #f8f9fa;
   --gray-100: #e9ecef;
   --gray-200: #dee2e6;
@@ -11,6 +12,11 @@
   --gray-600: #495057;
   --gray-700: #343a40;
   --solid-black: #212529;
+  --dark-blue: #023047;
+  --medium-blue: #219ebc;
+  --light-blue: #8ecae6;
+  --soft-yellow: #ffb703;
+  --soft-orange: #fb8500;
 }
 
 html {
@@ -28,6 +34,8 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -35,9 +43,7 @@ body {
   line-height: 1.5;
   min-height: 100%;
   background-color: var(--solid-white);
-  color: var(--solid-black);
-  margin: 0;
-  padding: 0;
+  color: var(--dark-blue);
 }
 
 h1,
