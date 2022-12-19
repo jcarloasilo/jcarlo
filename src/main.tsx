@@ -6,7 +6,6 @@ import JcarloMetaImg from "./assets/jcarlo-meta-img.png";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <meta property="og:image" itemProp="image" content={JcarloMetaImg} />
     <App />
   </React.StrictMode>
 );
