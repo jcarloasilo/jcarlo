@@ -5,13 +5,17 @@ import WorkImage from "./assets/work.png";
 import HumanImage from "./assets/human-code.png";
 import ContactImage from "./assets/paper.png";
 import ProjectList from "./components/ProjectList";
-import { useRef } from "react";
+import { useRef, useState } from "react";
+
+import emailjs from "@emailjs/browser";
 
 function App() {
   const myNameRef = useRef<HTMLDivElement | null>(null);
   const worksRef = useRef<HTMLDivElement | null>(null);
   const aboutRef = useRef<HTMLDivElement | null>(null);
   const contactRef = useRef<HTMLFormElement | null>(null);
+
+  const [sent, setSent] = useState(false);
 
   const myNameScroll = () => {
     myNameRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -27,6 +31,30 @@ function App() {
 
   const contactScroll = () => {
     contactRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  const sendEmail = (e: React.FormEvent<EventTarget | HTMLFormElement>) => {
+    e.preventDefault();
+
+    console.log(e.currentTarget);
+
+    emailjs
+      .sendForm(
+        "service_kwc0sz8",
+        "template_n75xdba",
+        e.currentTarget as HTMLFormElement,
+        "WKAolr17m9iX2mIEP"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          contactRef.current?.reset();
+          setSent(true);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
@@ -109,12 +137,19 @@ function App() {
           <h2>CONTACT</h2>
           <p>Let's Connect</p>
 
-          <form className={styles["contact-form"]} ref={contactRef}>
-            <input type="text" required />
-            <input type="text" required />
-            <textarea className={styles["long-input"]} required />
-
-            <button type="submit">CONNECT</button>
+          <form className={styles["contact-form"]} ref={contactRef} onSubmit={sendEmail}>
+            <input type="text" required placeholder="What's your name?" name="from_name" />
+            <input type="text" required placeholder="Your Email Address" name="from_email" />
+            <textarea
+              className={styles["long-input"]}
+              placeholder="Anything you want to say?"
+              required
+              name="html_message"
+            />
+            {sent && <h4 className={styles.sent}>Message sent </h4>}
+            <button value="Send" type="submit">
+              CONNECT
+            </button>
           </form>
         </div>
       </section>

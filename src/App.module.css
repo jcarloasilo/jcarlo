@@ -198,3 +198,8 @@ textarea {
   background-color: var(--soft-orange);
   /* color: var(--dark-blue); */
 }
+
+.sent {
+  color: rgb(96, 255, 96);
+  margin-bottom: 0;
+}
