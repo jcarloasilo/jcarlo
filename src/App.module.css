@@ -52,6 +52,7 @@
 
 #works h2 {
   font-size: 3rem;
+  margin-bottom: 4rem;
 }
 
 #about {
@@ -79,8 +80,18 @@
 
 #about p,
 li {
-  font-size: 1.3rem;
+  font-size: 1.125rem;
   color: var(--gray-500);
+}
+
+#about a {
+  color: var(--medium-blue);
+  text-decoration: underline;
+}
+
+#about a:hover,
+#about a:active {
+  color: var(--light-blue);
 }
 
 .description {
@@ -106,6 +117,11 @@ li {
 .skills ul {
   list-style-position: inside;
   list-style-type: circle;
+}
+
+.skillset {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 @media (min-width: 900px) {

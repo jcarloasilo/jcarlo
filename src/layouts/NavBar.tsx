@@ -3,22 +3,35 @@ import useMediaQuery from "../hooks/useMediaQuery";
 
 import styles from "./NavBar.module.css";
 
-const NavBar = () => {
+type Props = {
+  myNameScroll: () => void;
+  worksScroll: () => void;
+  aboutScroll: () => void;
+  contactScroll: () => void;
+};
+
+const NavBar = (props: Props) => {
+  const { myNameScroll, worksScroll, aboutScroll, contactScroll } = props;
+
   const matches = useMediaQuery("(min-width: 900px)");
 
   return (
     <header>
       <nav className={styles[`main-nav`]}>
-        {matches && <h2 className={styles.name}>JCARLO</h2>}
+        {matches && (
+          <h2 className={styles.name} onClick={myNameScroll}>
+            JCARLO
+          </h2>
+        )}
 
         <ul className={styles.links}>
-          <li>
+          <li onClick={worksScroll}>
             <a href="#works">WORK</a>
           </li>
-          <li>
+          <li onClick={aboutScroll}>
             <a href="#about">ABOUT</a>
           </li>
-          <li>
+          <li onClick={contactScroll}>
             <a href="#contact">CONTACT</a>
           </li>
         </ul>

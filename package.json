@@ -10,11 +10,14 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-portal": "^4.2.2",
+    "react-responsive-carousel": "^3.2.23"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
+    "@types/react-portal": "^4.0.4",
     "@vitejs/plugin-react": "^2.2.0",
     "typescript": "^4.6.4",
     "vite": "^3.2.3"
