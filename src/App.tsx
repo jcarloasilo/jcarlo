@@ -5,6 +5,9 @@ import WorkImage from "./assets/work.png";
 import HumanImage from "./assets/human-code.png";
 import ContactImage from "./assets/paper.png";
 import ProjectList from "./components/ProjectList";
+
+import MyResume from "./assets/RESUME-ASILO.pdf";
+
 import { useRef, useState } from "react";
 
 import emailjs from "@emailjs/browser";
@@ -126,6 +129,10 @@ function App() {
                   <li>Next.js</li>
                 </ul>
               </div>
+
+              <a className={styles.resume} href={MyResume} download="John Carlo Asilo Resume">
+                <span>RESUME</span>
+              </a>
             </div>
           </div>
         </div>

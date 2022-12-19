@@ -26,7 +26,7 @@ const PageLayout = (props: Props) => {
           contactScroll={contactScroll}
         />
         <main>{children}</main>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );
