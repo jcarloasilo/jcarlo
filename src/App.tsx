@@ -4,6 +4,7 @@ import styles from "./App.module.css";
 import WorkImage from "./assets/work.png";
 import HumanImage from "./assets/human-code.png";
 import ContactImage from "./assets/paper.png";
+import ProjectList from "./components/ProjectList";
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
         <div className={styles.container}>
           <img src={WorkImage} className={styles["work-img"]} />
           <h2>PROJECTS</h2>
+
+          <ProjectList />
         </div>
       </section>
 

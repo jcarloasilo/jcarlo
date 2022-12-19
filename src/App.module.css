@@ -87,12 +87,11 @@ li {
   display: grid;
   width: 100%;
   padding: 1.5em 3.5em;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 4em;
 }
 
 .intro {
-  grid-column: 1 / span 2;
   display: flex;
   flex-direction: column;
   gap: 1.5em;
@@ -107,6 +106,16 @@ li {
 .skills ul {
   list-style-position: inside;
   list-style-type: circle;
+}
+
+@media (min-width: 900px) {
+  .description {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .intro {
+    grid-column: 1 / span 2;
+  }
 }
 
 #contact {
@@ -145,17 +154,12 @@ textarea {
   border-radius: 10px;
   padding: 1.5em;
   border: 0;
-  outline: none;
+  outline-color: var(--light-blue);
   background-color: var(--gray-200);
 }
 
 .long-input {
   height: 12em;
-}
-
-input[type="text"]:focus,
-textarea:focus {
-  border: 3px dotted var(--light-blue);
 }
 
 .contact-form button {
