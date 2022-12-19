@@ -146,7 +146,13 @@ function App() {
 
           <form className={styles["contact-form"]} ref={contactRef} onSubmit={sendEmail}>
             <input type="text" required placeholder="What's your name?" name="from_name" />
-            <input type="text" required placeholder="Your Email Address" name="from_email" />
+            <input
+              type="email"
+              required
+              placeholder="Your Email Address"
+              name="from_email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            />
             <textarea
               className={styles["long-input"]}
               placeholder="Anything you want to say?"
