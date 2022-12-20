@@ -119,10 +119,10 @@ function App() {
                   <li>HTML</li>
                   <li>CSS3</li>
                   <li>Javascript</li>
+                  <li>Typescript</li>
                 </ul>
 
                 <ul>
-                  <li>Typescript</li>
                   <li>React</li>
                   <li>Prisma</li>
                   <li>MUI5</li>

@@ -124,9 +124,14 @@ li {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.skillset {
+  font-size: 1rem;
+}
+
 #about .resume {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
+  margin-top: auto;
   display: flex;
   justify-content: center;
   align-items: center;
