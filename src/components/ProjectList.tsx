@@ -8,15 +8,17 @@ import {
   BosscoImages,
   CibmImages,
   BloodDonationImages,
+  HatawTakboImages,
 } from "../assets/images";
 
 const ProjectList = () => {
   return (
     <div className={styles.projects}>
+      <ProjectCard title="Hataw Takbo" images={HatawTakboImages} />
       <ProjectCard title="ICT Inventory System" images={IctInventoryImages} />
       <ProjectCard title="CIBM" images={CibmImages} />
       <ProjectCard title="1Bossco Queuing System" images={BosscoImages} />
-      <ProjectCard title="Blood Donations" images={BloodDonationImages} />
+      {/* <ProjectCard title="Blood Donations" images={BloodDonationImages} /> */}
     </div>
   );
 };
