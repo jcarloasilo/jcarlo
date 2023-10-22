@@ -46,7 +46,7 @@ function App() {
         "service_kwc0sz8",
         "template_n75xdba",
         e.currentTarget as HTMLFormElement,
-        "WKAolr17m9iX2mIEP"
+        "ITMO6gj3jfs0OWuEk"
       )
       .then(
         (result) => {
@@ -116,21 +116,35 @@ function App() {
 
               <div className={styles.skillset}>
                 <ul>
+                  <li>Typescript</li>
+                  <li>Javascript</li>
+                  <li>Golang</li>
+                  <li>Python</li>
                   <li>HTML</li>
                   <li>CSS3</li>
-                  <li>Javascript</li>
-                  <li>Typescript</li>
+                  <li>SQL</li>
+                  <li>Node.js</li>
+                  <li>REST</li>
                 </ul>
 
                 <ul>
                   <li>React</li>
-                  <li>Prisma</li>
-                  <li>MUI5</li>
                   <li>Next.js</li>
+                  <li>Svelte</li>
+                  <li>Sveltekit</li>
+                  <li>Prisma</li>
+                  <li>Git</li>
+                  <li>Git</li>
+                  <li>CI/CD</li>
+                  <li>tRPC</li>
                 </ul>
               </div>
 
-              <a className={styles.resume} href={MyResume} download="John Carlo Asilo Resume">
+              <a
+                className={styles.resume}
+                target="_blank"
+                href="https://drive.google.com/file/d/1slrMqvYJ1Iwd4Nr9m-JQJIhi0VojoeOO/view?usp=sharing"
+              >
                 <span>RESUME</span>
               </a>
             </div>
