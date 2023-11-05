@@ -39,4 +39,11 @@
 	<title>Jcarlo</title>
 </svelte:head>
 
-<slot />
+<div class="md:flex">
+	<nav id="sidebar" class="sticky top-0 w-[70px] h-screen py-4 flex flex-col">
+		<a class="py-4" href="/">HEYY</a>
+	</nav>
+	<main class="md:relative px-6 md:px-12 md:flex-1 min-w-0">
+		<slot />
+	</main>
+</div>
