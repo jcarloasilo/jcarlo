@@ -93,18 +93,23 @@ function App() {
             <div className={styles.intro}>
               <h3>Hello, I'm John Carlo.</h3>
               <p>
-                I am a web developer from Phillipines. My journey to programming started in C that
-                eventually got me into Mobile Robotics, I get picked to be a{" "}
-                <a href="https://www.tesda.gov.ph/Gallery/Details/10337" target="_blank">
+                I am a web developer from Phillipines. My journey to programming
+                started in C that eventually got me into Mobile Robotics, I get
+                picked to be a{" "}
+                <a
+                  href="https://www.tesda.gov.ph/Gallery/Details/10337"
+                  target="_blank"
+                >
                   competitor
                 </a>{" "}
-                and work mostly working on embedded system. Now i build websites from small business
-                sites to rich interactive websites using my diverse skillsets.
+                and work mostly working on embedded system. Now i build websites
+                from small business sites to rich interactive websites using my
+                diverse skillsets.
               </p>
 
               <p>
-                If you are someone seeking for a web presence or an employer looking to hire, you
-                can get in touch with me{" "}
+                If you are someone seeking for a web presence or an employer
+                looking to hire, you can get in touch with me{" "}
                 <a href="#contact" onClick={contactScroll}>
                   here
                 </a>
@@ -156,10 +161,19 @@ function App() {
         <div className={styles.container}>
           <img src={ContactImage} className={styles["contact-img"]} />
           <h2>CONTACT</h2>
-          <p>Let's Connect</p>
+          <p>Let's Connect ttt</p>
 
-          <form className={styles["contact-form"]} ref={contactRef} onSubmit={sendEmail}>
-            <input type="text" required placeholder="What's your name?" name="from_name" />
+          <form
+            className={styles["contact-form"]}
+            ref={contactRef}
+            onSubmit={sendEmail}
+          >
+            <input
+              type="text"
+              required
+              placeholder="What's your name?"
+              name="from_name"
+            />
             <input
               type="email"
               required
