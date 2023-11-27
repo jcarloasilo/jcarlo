@@ -161,7 +161,7 @@ function App() {
         <div className={styles.container}>
           <img src={ContactImage} className={styles["contact-img"]} />
           <h2>CONTACT</h2>
-          <p>Let's Connect ttt</p>
+          <p>Let's Connect</p>
 
           <form
             className={styles["contact-form"]}

@@ -7,7 +7,7 @@ import styles from "./Footer.module.css";
 const Footer = () => {
   return (
     <footer className={styles["main-footer"]}>
-      <a href="https://github.com/fhero2030">
+      <a href="https://github.com/pasokoner">
         <FaGithubSquare className={styles.icon} />
       </a>
 
